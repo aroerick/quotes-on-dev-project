@@ -32,6 +32,7 @@ body {
     }
 }
 @include desktop {
+    
     .content-area {
         display: flex;
         justify-content: space-between;
@@ -103,4 +104,23 @@ footer{
         }
     }
 }
+
+/* About */
+
+.page {
+
+    article {
+        margin-top: 30px;
+            
+        p {
+            font-size: 1rem;
+            padding-top: 30px;
+        }
+        h1 {
+            font-size: 2rem;
+            font-weight: 500;
+        }
+    }
+}
+
 /* Submit a Quote Page */

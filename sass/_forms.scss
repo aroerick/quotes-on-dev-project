@@ -40,6 +40,10 @@ button {
 	border-radius: 3px;
 	padding: 10px 40px;
 
+	&:hover {
+		color: $color__brand-hover;
+		border-color: $color__brand-hover;
+	}
 	@include tablet {
         font-size: 1.25rem;
 	}

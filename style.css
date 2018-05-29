@@ -161,6 +161,9 @@ button {
   border: 2px solid #0C0;
   border-radius: 3px;
   padding: 10px 40px; }
+  button:hover {
+    color: #006600;
+    border-color: #006600; }
   @media (min-width: 620px) {
     button {
       font-size: 1.25rem; } }
@@ -308,5 +311,15 @@ footer {
       -webkit-box-pack: end;
           -ms-flex-pack: end;
               justify-content: flex-end; } }
+
+/* About */
+.page article {
+  margin-top: 30px; }
+  .page article p {
+    font-size: 1rem;
+    padding-top: 30px; }
+  .page article h1 {
+    font-size: 2rem;
+    font-weight: 500; }
 
 /* Submit a Quote Page */
