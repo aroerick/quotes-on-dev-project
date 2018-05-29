@@ -42,7 +42,11 @@ button {
 
 	@include tablet {
         font-size: 1.25rem;
-    }
+	}
+	@include desktop {
+		margin: 20px auto;
+		display: block;
+	}
 }
 
 /* Fields */

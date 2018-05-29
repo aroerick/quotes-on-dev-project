@@ -164,6 +164,10 @@ button {
   @media (min-width: 620px) {
     button {
       font-size: 1.25rem; } }
+  @media (min-width: 1080px) {
+    button {
+      margin: 20px auto;
+      display: block; } }
 
 /* Fields */
 /*--------------------------------------------------------------
@@ -217,8 +221,18 @@ button {
 --------------------------------------------------------------*/
 /* All Archives Page */
 body {
-  background: #222;
+  background: #222; }
+
+.container {
   margin: 50px 10px; }
+  @media (min-width: 620px) {
+    .container {
+      padding: 0 20px; } }
+  @media (min-width: 1080px) {
+    .container {
+      width: 1080px;
+      padding: 0 10px;
+      margin: 50px auto; } }
 
 .logo {
   width: 300px;
@@ -226,6 +240,35 @@ body {
   @media (min-width: 620px) {
     .logo {
       width: 500px; } }
+  @media (min-width: 1080px) {
+    .logo {
+      width: 700px;
+      margin: 10px auto; } }
+
+@media (min-width: 1080px) {
+  .content-area {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0 auto;
+    padding: 20px; }
+    .content-area p {
+      width: 700px;
+      font-size: 2.5rem;
+      padding-top: 30px; }
+    .content-area::before {
+      font-family: "FontAwesome";
+      font-size: 7.5rem;
+      color: #0C0;
+      content: "\f10d"; }
+    .content-area::after {
+      font-family: "FontAwesome";
+      font-size: 7.5rem;
+      color: #0C0;
+      content: "\f10e"; } }
 
 .entry-meta {
   display: -webkit-box;
@@ -260,5 +303,10 @@ footer {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex; } }
+  @media (min-width: 1080px) {
+    footer .site-info {
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end; } }
 
 /* Submit a Quote Page */

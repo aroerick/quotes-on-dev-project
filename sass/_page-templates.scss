@@ -6,7 +6,18 @@
 
 body {
     background: $color__background;
+}
+.container {
     margin: 50px 10px;
+
+    @include tablet {
+        padding: 0 20px;
+    }
+    @include desktop {
+        width: 1080px;
+        padding: 0 10px;
+        margin: 50px auto;
+    }
 }
 .logo {
     width: 300px;
@@ -14,6 +25,36 @@ body {
 
     @include tablet {
         width: 500px;
+    }
+    @include desktop {
+        width: 700px;
+        margin: 10px auto;
+    }
+}
+@include desktop {
+    .content-area {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        padding: 20px;
+
+        p {
+            width: 700px;
+            font-size: 2.5rem;
+            padding-top: 30px;
+        }
+        &::before{
+                font-family: "FontAwesome";
+                font-size: 7.5rem;
+                color: $color__brand-main;
+                content: "\f10d"
+        }
+        &::after{
+                font-family: "FontAwesome";
+                font-size: 7.5rem;
+                color: $color__brand-main;
+                content: "\f10e"
+        }
     }
 }
 .entry-meta {
@@ -56,6 +97,9 @@ footer{
 
         @include tablet {
             display: flex;
+        }
+        @include desktop {
+            justify-content: flex-end;
         }
     }
 }
