@@ -4,30 +4,30 @@
 
 /* Posts and pages */
 
-.sticky {
-	display: block;
-}
+// .sticky {
+// 	display: block;
+// }
 
-.hentry {
-	margin: 0 0 $base__space-unit;
-}
+// .hentry {
+// 	margin: 0 0 $base__space-unit;
+// }
 
-.updated:not(.published){
-	display: none;
-}
+// .updated:not(.published){
+// 	display: none;
+// }
 
-.single .byline,
-.group-blog .byline {
-	display: inline;
-}
+// .single .byline,
+// .group-blog .byline {
+// 	display: inline;
+// }
 
-.page-content,
-.entry-content,
-.entry-summary {
-	margin: $base__space-unit 0 0;
-}
+// .page-content,
+// .entry-content,
+// .entry-summary {
+// 	margin: $base__space-unit 0 0;
+// }
 
-.page-links {
-	clear: both;
-	margin: 0 0 $base__space-unit;
-}
+// .page-links {
+// 	clear: both;
+// 	margin: 0 0 $base__space-unit;
+// }
