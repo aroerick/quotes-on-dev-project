@@ -11,6 +11,10 @@ body {
 .logo {
     width: 300px;
     margin: 10px 0;
+
+    @include tablet {
+        width: 500px;
+    }
 }
 .entry-meta {
     display: flex;
@@ -18,13 +22,17 @@ body {
 }
 footer{
     margin: 60px 0;
+    line-height: 2.5;
+
     p{
         font-size: 1rem;
-    }
 
+        @include tablet {
+            padding-left: 10px;
+        }
+    }
     ul {
         display: flex;
-        margin: 10px 0;
 
         li {
 
@@ -37,7 +45,17 @@ footer{
             }
             &:last-child a{
                 border-right: none;
+
+                @include tablet {
+                    border-right: 1px solid $color__accent-main;
+                }
             }
+        }
+    }
+    .site-info {
+
+        @include tablet {
+            display: flex;
         }
     }
 }

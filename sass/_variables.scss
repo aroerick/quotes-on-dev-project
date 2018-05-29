@@ -1,6 +1,8 @@
 // Structure
 
 // $base__space-unit: 1.5rem;
+$screen__tablet-width: 620px;
+$screen__destop-width: 1080px;
 
 // Colors
 
@@ -21,6 +23,7 @@
 
 $color__background: #222;
 $color__brand-main: #0C0;
+$color__brand-hover: darken($color__brand-main, 20%);
 $color__accent-main: #fff;
 
 // Typography

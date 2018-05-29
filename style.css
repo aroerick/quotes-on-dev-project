@@ -131,11 +131,16 @@ h2 {
 /* Copy */
 p {
   font-size: 1.25rem; }
+  @media (min-width: 620px) {
+    p {
+      font-size: 1.75rem; } }
 
 /* Links */
 a {
   color: #0C0;
   text-decoration: none; }
+  a:hover {
+    color: #006600; }
 
 .source {
   font-size: 1.25rem;
@@ -156,6 +161,9 @@ button {
   border: 2px solid #0C0;
   border-radius: 3px;
   padding: 10px 40px; }
+  @media (min-width: 620px) {
+    button {
+      font-size: 1.25rem; } }
 
 /* Fields */
 /*--------------------------------------------------------------
@@ -215,6 +223,9 @@ body {
 .logo {
   width: 300px;
   margin: 10px 0; }
+  @media (min-width: 620px) {
+    .logo {
+      width: 500px; } }
 
 .entry-meta {
   display: -webkit-box;
@@ -223,14 +234,17 @@ body {
   margin: 20px 0 40px 0; }
 
 footer {
-  margin: 60px 0; }
+  margin: 60px 0;
+  line-height: 2.5; }
   footer p {
     font-size: 1rem; }
+    @media (min-width: 620px) {
+      footer p {
+        padding-left: 10px; } }
   footer ul {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
-    margin: 10px 0; }
+    display: flex; }
     footer ul li a {
       border-right: 1px solid #fff;
       padding: 0 10px; }
@@ -238,5 +252,13 @@ footer {
       padding-left: 0; }
     footer ul li:last-child a {
       border-right: none; }
+      @media (min-width: 620px) {
+        footer ul li:last-child a {
+          border-right: 1px solid #fff; } }
+  @media (min-width: 620px) {
+    footer .site-info {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; } }
 
 /* Submit a Quote Page */

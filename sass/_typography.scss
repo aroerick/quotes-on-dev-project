@@ -20,6 +20,10 @@ h2 {
 
 p {
 	font-size: 1.25rem;
+
+	@include tablet {
+        font-size: 1.75rem;
+    }
 }
 
 /* Links */
@@ -27,6 +31,10 @@ p {
 a {
 	color: $color__brand-main;
 	text-decoration: none;
+
+	&:hover {
+		color: $color__brand-hover;
+	}
 }
 
 .source {
