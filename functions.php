@@ -72,6 +72,17 @@ function qod_scripts() {
 	/**
 	 * @TODO add localize script rest api JavaScript
 	 */
+	if ( function_exists( 'rest_url' ) ) {
+		wp_enqueue_script( 
+			'qod_api', get_template_directory_uri() . '/build/js/api.min.js', array(), false, true);
+			wp_localize_script( 'qod_api', 'api_vars', array(
+				'root_url' => esc_url_raw( rest_url() ),
+				'home_url' => esc_url_raw( home_url() ),
+				'nonce' => wp_create_nonce( 'wp_rest' ),
+				'success' => 'Quote submission successful! Thanks, friend!',
+				'failure' => 'Quote submission could not be processed. Sorry, friend!'
+			));
+	};
 }
 add_action( 'wp_enqueue_scripts', 'qod_scripts' );
 
