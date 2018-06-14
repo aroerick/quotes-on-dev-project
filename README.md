@@ -2,22 +2,7 @@
 
 A WordPress starter theme for the Quotes on Dev project, forked from Underscores.
 
-## Installation
+## Rest API
 
-### 1. Download me (don't clone me!)
+Using the wp rest API enables us to access and get/post information to our API, and use that to dynamically update the content on our page. In combination with ajax, we are able to update content without a page reload and create a seamless viewing experience.
 
-Then add me to your `wp-content/themes` directory.
-
-### 2. Rename the `quotesondev-starter-master` directory
-
-Make sure that the theme directory name is project appropriate! Do you need `starter` or `master` in the directory name?
-
-### 3. Install the dev dependencies
-
-Next you'll need to run `npm install` **inside your theme directory** to install the npm packages you'll need for Gulp, etc.
-
-### 4. Update the proxy in `gulpfile.js`
-
-Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Browsersync proxy (so change `localhost[:port-here]/[your-dir-name-here]` to the appropriate localhost URL).
-
-And now would be a good time to `git init` :)

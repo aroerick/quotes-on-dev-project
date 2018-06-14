@@ -28,10 +28,10 @@
       } else {
         $('.source').html('');
       }
-      history.pushState(null, null, d.slug);
+      history.pushState(null, null, api_vars.root_url + '/' + d.slug);
 
     }).fail( function() {
-      // error message (append)
+      $('.entry-header').append('<p>Uh oh. Something went wrong!</p>');
     });
   });
 
